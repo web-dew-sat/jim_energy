@@ -1,0 +1,40 @@
+.about
+    background: #273947
+.about-intro
+    display: flex
+    justify-content: space-between
+    margin-top: 86px
+    align-items: center
+    &__content
+        max-width: 540px
+    &__description
+        font-weight: 600
+        font-size: 20px
+        line-height: 1.5em
+        &_mtop
+            margin-top: 33px
+    &__item
+        font-weight: 600
+        font-size: 20px
+        line-height: 1.5em
+        color: #fff
+        position: relative
+        padding-left: 11px
+        &::before
+            content: ""
+            display: block
+            width: 6px
+            height: 2px
+            background: #fff
+            position: absolute
+            top: 13px
+            left: 0
+.wrapper-img
+    background: $main_color
+    width: 550px
+    height: 521px
+    position: relative
+    &__img
+        position: absolute
+        top: -20px
+        left: -20px

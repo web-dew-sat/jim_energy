@@ -19,6 +19,9 @@
     text-align: right
     position: relative
     z-index: 1
+    display: flex
+    flex-direction: column
+    align-items: flex-end
     &::before
         content: ""
         display: block
@@ -30,7 +33,7 @@
         right: 0
         z-index: -1
     &__title
-        font-family: Playfair Display
+        font-family: 'Playfair Display', serif
         font-style: normal
         font-weight: normal
         font-size: 48px
@@ -40,7 +43,7 @@
         display: block
         font-weight: 600
         font-size: 20px
-        margin: 33px 0 0 195px
+        margin: 33px 24px 0 0
         max-width: 355px
 .outro
     max-width: 309px
