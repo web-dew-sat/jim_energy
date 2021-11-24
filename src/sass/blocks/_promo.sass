@@ -1,0 +1,66 @@
+.promo
+    background: url('../img/main-bg.png') center (center/cover) no-repeat
+    min-height: 800px
+    padding: 75px 0px 212px
+    &__content
+        position: relative
+.intro
+    max-width: 357px
+    text-align: right
+    margin-left: auto
+    &__title
+        font-weight: 600
+        font-size: 20px
+        text-transform: uppercase
+        line-height: 1.5em
+.offer
+    max-width: 574px
+    margin: 75px auto 0px
+    text-align: right
+    position: relative
+    z-index: 1
+    &::before
+        content: ""
+        display: block
+        width: 495px
+        height: 378px
+        background: linear-gradient(to right top, transparent 50%, $main_color 50%)
+        position: absolute
+        top: 0
+        right: 0
+        z-index: -1
+    &__title
+        font-family: Playfair Display
+        font-style: normal
+        font-weight: normal
+        font-size: 48px
+        text-transform: uppercase
+        padding-top: 24px
+    &__description
+        display: block
+        font-weight: 600
+        font-size: 20px
+        margin: 33px 0 0 195px
+        max-width: 355px
+.outro
+    max-width: 309px
+    position: absolute
+    left: 0
+    bottom: -110px
+    &__title
+        font-weight: 600
+        font-size: 20px
+        line-height: 1.5em
+        text-transform: uppercase
+        &::after
+            content: ""
+            width: 309px
+            height: 10px
+            display: block
+            background: #fff
+            margin-top: 20px
+    &__description
+        font-weight: 600
+        font-size: 14px
+        line-height: 1.5em
+        margin-top: 20px

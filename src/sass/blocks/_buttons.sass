@@ -12,14 +12,47 @@ button:focus
     display: block
     background: transparent
     color: #fff
+    &:hover
+        background: #fff
+        color: $main_color
+        transition: $transition
+        border: 1px solid transparent
+        border-radius: 5px
+    &:active
+        background: #dadada
     &_header
-        padding: 14px 26px
+        padding: 14px 23px
         font-size: 14px
         line-height: 17px
         width: 187px
         height: 45px
-        &:hover
-            background: $main_color
+    &_offer
+        margin: 90px 0 0 301px
+        position: relative
+        &::before
+            content: ""
+            display: block
+            width: 9px
+            height: 2px
+            background: #fff
+            position: absolute
+            transform: rotate(45deg)
+            top: 23px
+            right: 33px
             transition: $transition
-            border: 1px solid transparent
-            border-radius: 5px
+        &::after
+            content: ""
+            display: block
+            width: 9px
+            height: 2px
+            background: #fff
+            position: absolute
+            transform: rotate(-45deg)
+            bottom: 23px
+            right: 33px
+            transition: $transition
+        &:hover
+            &::before
+                background: $main_color
+            &::after
+                background: $main_color
