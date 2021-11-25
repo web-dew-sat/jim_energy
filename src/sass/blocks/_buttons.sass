@@ -56,3 +56,33 @@ button:focus
                 background: $main_color
             &::after
                 background: $main_color
+    &_projects
+        margin: 97px auto 0
+        position: relative
+        &::before
+            content: ""
+            display: block
+            width: 9px
+            height: 2px
+            background: #fff
+            position: absolute
+            transform: rotate(135deg)
+            top: 50%
+            right: 31px
+            transition: $transition
+        &::after
+            content: ""
+            display: block
+            width: 9px
+            height: 2px
+            background: #fff
+            position: absolute
+            transform: rotate(45deg)
+            bottom: calc( 50% - 2px )
+            right: 37px
+            transition: $transition
+        &:hover
+            &::before
+                background: $main_color
+            &::after
+                background: $main_color
