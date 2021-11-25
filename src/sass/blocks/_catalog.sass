@@ -1,0 +1,50 @@
+.catalog
+    background: $bg_color
+    padding-bottom: 100px
+    &__cards
+        display: flex
+        flex-wrap: wrap
+        justify-content: space-between
+        margin-top: 100px
+    &__card
+        width: 289px
+        height: 350px
+        background: rgba(15, 30, 44, 0.7)
+        display: flex
+        flex-direction: column
+        align-items: center
+        transition: $transition
+        position: relative
+        cursor: pointer
+        &_mtop
+            margin-top: 20px
+        &:hover
+            -webkit-transform: scale(1.1)
+            -ms-transform: scale(1.1)
+            transform: scale(1.1)
+        // &::after
+        //     content: ""
+        //     width: 100%
+        //     height: 100%
+        //     position: absolute
+        //     left: 0
+        //     top: 0
+        //     background: rgba(0, 0, 0, 0.5)
+        //     opacity: 0
+        //     display: flex
+        //     align-items: center
+        //     justify-content: center
+        //     transition: opacity 0.5s ease
+        // &:hover
+        //     &::after
+        //         opacity: 1
+        //         transition: opacity 0.5s ease
+    &__img
+        margin-top: 90px
+    &__name
+        margin-top: 50px
+        font-weight: 500
+        font-size: 18px
+        line-height: 1.5em
+        text-align: center
+        max-width: 219px
