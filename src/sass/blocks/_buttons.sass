@@ -29,17 +29,7 @@ button:focus
     &_offer
         margin: 90px 24px 0 0
         position: relative
-        &::before
-            content: ""
-            display: block
-            width: 9px
-            height: 2px
-            background: #fff
-            position: absolute
-            transform: rotate(45deg)
-            top: 23px
-            right: 33px
-            transition: $transition
+        &::before,
         &::after
             content: ""
             display: block
@@ -47,29 +37,23 @@ button:focus
             height: 2px
             background: #fff
             position: absolute
+            transition: $transition
+        &::before
+            transform: rotate(45deg)
+            top: 23px
+            right: 33px
+        &::after
             transform: rotate(-45deg)
             bottom: 23px
             right: 33px
-            transition: $transition
         &:hover
-            &::before
-                background: $main_color
+            &::before,
             &::after
                 background: $main_color
     &_projects
         margin: 97px auto 0
         position: relative
-        &::before
-            content: ""
-            display: block
-            width: 9px
-            height: 2px
-            background: #fff
-            position: absolute
-            transform: rotate(135deg)
-            top: 50%
-            right: 31px
-            transition: $transition
+        &::before,
         &::after
             content: ""
             display: block
@@ -77,12 +61,40 @@ button:focus
             height: 2px
             background: #fff
             position: absolute
+            transition: $transition
+        &::before
+            transform: rotate(135deg)
+            top: 50%
+            right: 31px
+        &::after
             transform: rotate(45deg)
             bottom: calc( 50% - 2px )
             right: 37px
-            transition: $transition
         &:hover
-            &::before
+            &::before,
+            &::after
                 background: $main_color
+    &_form
+        width: 194px
+        position: relative
+        &::before,
+        &::after
+            content: ""
+            display: block
+            width: 9px
+            height: 2px
+            background: #fff
+            position: absolute
+            transition: $transition
+        &::before
+            transform: rotate(45deg)
+            top: 23px
+            right: 33px
+        &::after
+            transform: rotate(-45deg)
+            bottom: 23px
+            right: 33px
+        &:hover
+            &::before,
             &::after
                 background: $main_color
