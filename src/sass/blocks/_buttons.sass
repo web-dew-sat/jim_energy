@@ -12,12 +12,15 @@ button:focus
     display: block
     background: transparent
     color: #fff
+    -webkit-transition: box-shadow 800ms ease-in-out, color 800ms ease-in-out
+    transition: box-shadow 500ms ease-in-out, color 500ms ease-in-out
     &:hover
         background: #fff
         color: $main_color
         transition: $transition
         border: 1px solid transparent
         border-radius: 5px
+        box-shadow: 0 0 40px 40px #fff inset
     &:active
         background: #dadada
     &_header
@@ -122,3 +125,32 @@ button:focus
             &::before,
             &::after
                 background: $main_color
+    &_modal
+        margin-top: 40px
+        border: 1px solid $main_color
+        color: $main_color
+        position: relative
+        &::before,
+        &::after
+            content: ""
+            display: block
+            width: 9px
+            height: 2px
+            background: $main_color
+            position: absolute
+            transition: $transition
+        &::before
+            transform: rotate(45deg)
+            top: 23px
+            right: 33px
+        &::after
+            transform: rotate(-45deg)
+            bottom: 23px
+            right: 33px
+        &:hover
+            background: $main_color
+            box-shadow: 0 0 40px 40px $main_color inset
+            color: #fff
+            &::before,
+            &::after
+                background: #fff

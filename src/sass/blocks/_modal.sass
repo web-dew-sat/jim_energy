@@ -1,0 +1,65 @@
+.modal-wrapper
+    width: 660px
+    height: 483px
+    position: fixed
+    top: 50%
+    left: 50%
+    transform: translate(-50%,-50%)
+    z-index: 5
+    display: none
+.successfully
+    background: #33BA87
+    position: relative
+    height: 180px
+    z-index: 1
+    &__check
+        &::before,
+        &::after
+            content: ""
+            display: block
+            width: 14px
+            background: #fff
+            position: absolute
+            border-radius: 10px
+            z-index: 3
+        &::before
+            height: 31px
+            top: 88px
+            left: 328px
+            transform: rotate(315deg)
+        &::after
+            height: 57px
+            top: 67px
+            right: 295px
+            transform: rotate(45deg)
+        &_opacity
+            &::before,
+            &::after
+                background: #29A576
+                z-index: 2
+            &::before
+                top: 85px
+                left: 301px
+            &::after
+                top: 62px
+                right: 323px
+.thanks
+    display: flex
+    flex-direction: column
+    align-items: center
+    background: #fff
+    height: 303px
+    &__title
+        color: #273947
+        font-weight: bold
+        font-size: 20px
+        line-height: 1.5em
+        margin-top: 40px
+    &__text
+        font-weight: 500
+        font-size: 16px
+        line-height: 1.5em
+        color: #273947
+        max-width: 594px
+        text-align: center
+        margin-top: 15px
