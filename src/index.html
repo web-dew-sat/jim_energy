@@ -437,15 +437,15 @@
    <section class="feedback" id="feedback">
         <div class="feedback__container">
             <div class="feedback__map">
-                <img src="img/map.png" alt="Карта" class="feedback__map-img">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10012.66002227532!2d71.4714288959379!3d51.14230822715503!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4245815d9f255555%3A0xf1b3f98919c5791c!2z0YPQuy4g0JHQtdC40LzQsdC10YIg0JzQsNC50LvQuNC9IDQvMSwg0J3Rg9GALdCh0YPQu9GC0LDQvSAwMTAwMDAsINCa0LDQt9Cw0YXRgdGC0LDQvQ!5e0!3m2!1sru!2sru!4v1638731004673!5m2!1sru!2sru" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
             </div>
             <div class="feedback__content">
                 <h2 class="section-title section-title_feedback">Обратная связь</h2>
-                <form class="feedback__form" autocomplete="off">
+                <form class="feedback__form" autocomplete="off" id="form">
                     <input type="text" name="name" class="feedback__input" placeholder="Ваше имя" >
-                    <input type="tel" name="tel" class="feedback__input" placeholder="Ваш номер телефона">
+                    <input name="tel" id="phone" class="feedback__input" placeholder="Ваш номер телефона (Без 8)">
                     <textarea name="message" id="" class="feedback__input feedback__input_message" placeholder="Сообщение"></textarea>
-                    <button type="submit" class="btn btn_form">Отправить</button>
+                    <button class="btn btn_form">Отправить</button>
                 </form>
             </div>
         </div>
@@ -553,6 +553,8 @@
    <!-- Scripts -->
 
    <script src="js/jquery-3.6.0.min.js"></script>
+   <script src="js/jquery.validate.min.js"></script>
+   <script src="js/jquery.mask.min.js"></script>
    <script src="js/main.js"></script>
 </body>
 </html>

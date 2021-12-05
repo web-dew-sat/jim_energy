@@ -14,6 +14,13 @@
         display: flex
         flex-direction: column
         margin-top: 100px
+        .error
+            box-shadow: 0px 0px 20px red
+        label.error
+            box-shadow: none
+            color: #fff
+            margin-top: -20px
+            margin-bottom: 50px
     &__input
         border: 1px solid #FFFFFF
         background: transparent
@@ -25,6 +32,8 @@
         line-height: 20px
         color: #FFFFFF
         outline: none
+        &:focus
+            box-shadow: 0 0 20px green
         &::-webkit-input-placeholder
             color: #fff
         &::-moz-placeholder
