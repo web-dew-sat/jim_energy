@@ -2,7 +2,7 @@ $(document).ready(function(){
         $('.btn_modal').on('click', function(){
                 $('#modal-wrapper').fadeOut('slow')
         });
-        //Header scroll
+        //Scroll
         var HeaderTop = $('#header').offset().top;
 
         $(window).scroll(function(){
@@ -17,6 +17,23 @@ $(document).ready(function(){
                                 'paddingTop': 0 // удаляю отступ у body, равный высоте шапки
                         })
                 }
+                if( $(window).scrollTop() > 1600 ) {
+                        $('.pageup').fadeIn();
+                        
+                } else {
+                        $('.pageup').fadeOut();
+                }
+        });
+
+        $('.pageup').click(function(e) {
+                e.preventDefault();
+                $('body,html').animate({scrollTop:0}, "show");       
+        });
+
+        $('a[href^="#"]').click(function(){
+                var el = $(this).attr('href');
+                $('body, html').animate({scrollTop: $(el).offset().top + "px"}, "show");
+                return false;
         });
 
         //Validate
@@ -62,10 +79,10 @@ $(document).ready(function(){
                 return false;
 
         });
+       
 
 
-
-
+       
 
 
 });
